@@ -1,6 +1,6 @@
 # README
 
-## Humanoid Description ROS2 Package
+## ROS2 Package
 
 The `humanoid_description` ROS2 package was generated using the [`fusion2urdf-ros2`](https://github.com/dheena2k2/fusion2urdf-ros2) script.
 
