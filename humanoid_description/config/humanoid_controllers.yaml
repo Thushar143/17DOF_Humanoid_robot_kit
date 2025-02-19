@@ -1,0 +1,26 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 30
+
+robot_controller:
+  ros__parameters:
+    joints:
+      - L_hip_joint
+      - L_thigh
+      - L_knee
+      - L_ankle_pitch
+      - L_ankle_roll
+      - R_hip_joint
+      - R_thigh
+      - R_knee
+      - R_ankle_pitch
+      - R_ankle_roll
+      - L_shoulder_joint
+      - L_upperarm
+      - L_forearm
+      - R_shoulder_joint
+      - R_upperarm
+      - R_forearm
+      - Head
+    interface_name: hardware_interface/PositionJointInterface
+    type: joint_trajectory_controller/JointTrajectoryController
