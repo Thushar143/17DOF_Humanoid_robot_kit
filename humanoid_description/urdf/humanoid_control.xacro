@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find humanoid_description)/urdf/humanoid.xacro" />
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <parameters>$(find humanoid_description)/config/humanoid_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+  <ros2_control>
+      <hardware_interface>
+          <name>MyRobotSystem</name>
+          <plugin>gazebo_ros2_control::GazeboSystem</plugin>
+      </hardware_interface>
+
+      <xacro:macro name="control_block" params="joint_name">
+          <joint name="${joint_name}">
+              <command_interface>position</command_interface>
+              <state_interface>position</state_interface>
+          </joint>
+      </xacro:macro>
+
+      <xacro:control_block joint_name="L_hip_joint"/>
+      <xacro:control_block joint_name="L_thigh"/>
+      <xacro:control_block joint_name="L_knee"/>
+      <xacro:control_block joint_name="L_ankle_pitch"/>
+      <xacro:control_block joint_name="L_ankle_roll"/>
+      <xacro:control_block joint_name="R_hip_joint"/>
+      <xacro:control_block joint_name="R_thigh"/>
+      <xacro:control_block joint_name="R_knee"/>
+      <xacro:control_block joint_name="R_ankle_pitch"/>
+      <xacro:control_block joint_name="R_ankle_roll"/>
+      <xacro:control_block joint_name="L_shoulder_joint"/>
+      <xacro:control_block joint_name="L_upperarm"/>
+      <xacro:control_block joint_name="L_forearm"/>
+      <xacro:control_block joint_name="R_shoulder_joint"/>
+      <xacro:control_block joint_name="R_upperarm"/>
+      <xacro:control_block joint_name="R_forearm"/>
+      <xacro:control_block joint_name="Head"/>
+
+  </ros2_control>
+
+</robot>

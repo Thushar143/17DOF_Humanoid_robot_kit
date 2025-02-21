@@ -388,9 +388,6 @@
   <child link="L_hip_joint_1"/>
   <axis xyz="-1.0 -0.0 -0.0"/>
   <limit upper="0.523599" lower="-1.570796" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="L_thigh" type="revolute">
@@ -407,9 +404,6 @@
   <child link="L_knee_1"/>
   <axis xyz="0.0 -1.0 -0.0"/>
   <limit upper="1.570796" lower="-2.356194" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="L_ankle_pitch" type="revolute">
@@ -418,9 +412,6 @@
   <child link="L_ankle_pitch_1"/>
   <axis xyz="-0.0 -1.0 0.0"/>
   <limit upper="1.570796" lower="-0.698132" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="L_ankle_roll" type="revolute">
@@ -429,9 +420,6 @@
   <child link="L_ankle_roll_1"/>
   <axis xyz="-1.0 -0.0 -0.0"/>
   <limit upper="1.570796" lower="-0.523599" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="R_hip_joint" type="revolute">
@@ -440,9 +428,6 @@
   <child link="R_hip_joint_1"/>
   <axis xyz="-1.0 -0.0 -0.0"/>
   <limit upper="1.570796" lower="-0.523599" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="R_thigh" type="revolute">
@@ -451,9 +436,6 @@
   <child link="R_thigh_1"/>
   <axis xyz="-0.0 1.0 0.0"/>
   <limit upper="2.356194" lower="-2.356194" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="R_knee" type="revolute">
@@ -462,9 +444,6 @@
   <child link="R_knee_1"/>
   <axis xyz="0.0 1.0 0.0"/>
   <limit upper="2.356194" lower="-1.570796" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="R_ankle_pitch" type="revolute">
@@ -473,9 +452,6 @@
   <child link="R_ankle_pitch_1"/>
   <axis xyz="-0.0 1.0 0.0"/>
   <limit upper="0.698132" lower="-1.570796" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="R_ankle_roll" type="revolute">
@@ -484,9 +460,6 @@
   <child link="R_ankle_roll_1"/>
   <axis xyz="-1.0 -0.0 -0.0"/>
   <limit upper="0.523599" lower="-1.570796" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="L_shoulder_joint" type="revolute">
@@ -495,9 +468,6 @@
   <child link="L_shoulder_joint_1"/>
   <axis xyz="-0.0 1.0 0.0"/>
   <limit upper="3.141593" lower="-3.141593" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="L_upperarm" type="revolute">
@@ -506,9 +476,6 @@
   <child link="L_upperarm_1"/>
   <axis xyz="-1.0 -0.0 0.0"/>
   <limit upper="0.174533" lower="-3.752458" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="L_forearm" type="revolute">
@@ -517,9 +484,6 @@
   <child link="L_forearm_1"/>
   <axis xyz="-1.0 0.0 0.0"/>
   <limit upper="3.141593" lower="-2.443461" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="R_shoulder_joint" type="revolute">
@@ -528,9 +492,6 @@
   <child link="R_shoulder_joint_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
   <limit upper="3.141593" lower="-3.141593" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="R_upperarm" type="revolute">
@@ -539,9 +500,6 @@
   <child link="R_upperarm_1"/>
   <axis xyz="-1.0 -0.0 -0.0"/>
   <limit upper="3.752458" lower="-0.174533" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="R_forearm" type="revolute">
@@ -550,9 +508,6 @@
   <child link="R_forearm_1"/>
   <axis xyz="-1.0 0.0 -0.0"/>
   <limit upper="2.443461" lower="-3.141593" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 <joint name="Head" type="revolute">
@@ -561,9 +516,6 @@
   <child link="Head_1"/>
   <axis xyz="0.0 -0.0 1.0"/>
   <limit upper="2.356194" lower="-2.356194" effort="100" velocity="100"/>
-  <ros2_control>
-    <hardware_interface>hardware_interface/PositionJointInterface</hardware_interface>
-  </ros2_control>
 </joint>
 
 </robot>

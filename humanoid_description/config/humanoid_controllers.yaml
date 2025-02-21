@@ -1,9 +1,10 @@
 controller_manager:
   ros__parameters:
-    update_rate: 30
+    update_rate: 30 # Must be an integer
 
-robot_controller:
+my_robot_system: # This name MUST match the <hardware_interface><name> tag in your xacro file.
   ros__parameters:
+    interface_name: MyRobotSystem # This name MUST match the <hardware_interface><name> tag in your xacro file.
     joints:
       - L_hip_joint
       - L_thigh
@@ -22,5 +23,11 @@ robot_controller:
       - R_upperarm
       - R_forearm
       - Head
-    interface_name: hardware_interface/PositionJointInterface
-    type: joint_trajectory_controller/JointTrajectoryController
+
+    # These must match the <command_interface> and <state_interface> tags defined in the xacro file
+    command_interfaces:
+      - position # Or velocity, depending on your setup
+    state_interfaces:
+      - position # Or velocity, depending on your setup
+
+    type: joint_trajectory_controller/JointTrajectoryController # Or other controller type
